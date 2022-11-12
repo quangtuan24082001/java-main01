@@ -44,25 +44,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(@NonNull GoogleMap googleMap) {
         mMap = googleMap;
 
-        mMap.getUiSettings().setMyLocationButtonEnabled(true);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        mMap.setMyLocationEnabled(true);
+
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
-        LatLng sysney =new LatLng(-10.0268264,105.7573528);
+        LatLng sysney =new LatLng(10.8756461,106.7969759);
         mMap.addMarker(new MarkerOptions().position(sysney).title("KHTN"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sysney,13));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sysney,15));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(19.0f));
-
     }
 
 

@@ -23,7 +23,7 @@ public class SigninActivity extends AppCompatActivity {
     private EditText emailEdit, pwEdit, repwEdit;
     private Button  signinbtn;
     private FirebaseAuth mAuth;
-
+    private MaterialButton backlogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,8 +42,18 @@ public class SigninActivity extends AppCompatActivity {
                 register();
             }
         });
+        backlogin=(MaterialButton) findViewById(R.id.signinbackbtn);
+        backlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(SigninActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+
+        });
 
     }
+
 
     private void register() {
         String email, pw, repw;
@@ -95,6 +105,7 @@ public class SigninActivity extends AppCompatActivity {
                 }
             }
         });
+
 
     }
 

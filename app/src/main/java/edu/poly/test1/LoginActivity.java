@@ -35,8 +35,6 @@ public class LoginActivity extends AppCompatActivity {
         loginbtn = findViewById(R.id.loginbtn);
         signinbtn = findViewById(R.id.signbtn);
 
-
-
         // chuyen login sang signin
         signinbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +50,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
 
         private void login() {
             // 2 biến lưu email và password
@@ -92,9 +89,6 @@ public class LoginActivity extends AppCompatActivity {
                 }
             });
         }
-
-
-
 
     private void register() {
         Intent intent=new Intent(LoginActivity.this,SigninActivity.class);
