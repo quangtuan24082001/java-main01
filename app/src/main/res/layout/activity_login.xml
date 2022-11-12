@@ -6,7 +6,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
 
-
+    android:background="@drawable/th"
     tools:context=".LoginActivity">
 
     <TextView
@@ -14,13 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:gravity="center"
+        android:textColor="@color/white"
         android:text="ĐĂNG NHẬP"
-        android:textColor="#000"
-        android:textSize="30dp"
+        android:textSize="35dp"
         android:textStyle="bold" />
 
     <EditText
@@ -64,11 +64,14 @@
         android:layout_below="@id/password"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/design_default_color_secondary"
-        android:text="Đăng nhập" />
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Đăng nhập"
+        android:textColor="#000"
+        android:textSize="30dp"
+        />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signbtn"
@@ -77,11 +80,13 @@
         android:layout_below="@id/loginbtn"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/design_default_color_secondary"
-        android:text="ĐĂNG KÝ" />
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="ĐĂNG KÝ"
+        android:textColor="#000"
+        android:textSize="30dp"/>
 
 
 </RelativeLayout>

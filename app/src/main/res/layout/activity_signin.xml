@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/th"
     tools:context=".SigninActivity">
 
     <TextView
+        android:id="@+id/signuptitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signuptitle"
-        android:text="Đăng ký"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:layout_margin="20dp"
-
+        android:text="ĐĂNG KÝ"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -25,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/signuptitle"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
@@ -51,8 +54,6 @@
         android:inputType="textPassword"
         android:padding="20dp"
   />
-
-
     <EditText
         android:id="@+id/repassword"
         android:layout_width="match_parent"
@@ -69,7 +70,6 @@
         android:inputType="textPassword"
         android:padding="20dp"
     />
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signbtn"
         android:layout_width="wrap_content"
@@ -77,12 +77,28 @@
         android:layout_below="@id/repassword"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="@color/design_default_color_secondary"
         android:text="đăng ký"
-        android:textSize="25dp" />
-
+        android:textSize="30dp"
+        android:textColor="#000"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signinbackbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="QUAY LẠI"
+        android:textSize="30dp"
+        android:textColor="#000"
+        />
 
 </RelativeLayout>
